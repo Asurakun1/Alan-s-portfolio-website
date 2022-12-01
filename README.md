@@ -1,0 +1,1 @@
+This is a personal portfolio website made by Alan Ng to showcase his projects to the world.
