@@ -19,7 +19,7 @@ main{
 
 h1{
     text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -38,11 +38,14 @@ section h2, section p, h2{
 .project-section{
     border: 1px solid white;
     margin: 0;
-    width: 99.9vw;
+    margin-left: 5vw;
+    width: 89vw;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    flex-flow: wrap;
+    justify-content: flex-start;
+    gap: 2vw;
 }
+
 h2{
     font-size: 3rem;
 }
@@ -53,7 +56,7 @@ h2{
 
 .box{
     display: block;
-    width: 25vw;
+    width: 15vw;
 }
 
 .box h3{
