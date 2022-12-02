@@ -30,7 +30,7 @@ h2{
 }
 
 article p{
-    min-height: 50vh;
+    min-height: 25vh;
     min-width: 30vh;
     max-width: 80vw;
     max-height: 100vh;
@@ -40,6 +40,7 @@ article p{
 }
 
 @media only screen and (max-height: 800px) and (max-width: 413px){
+
     article p{
         min-height: 65rem;
     }
