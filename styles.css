@@ -17,6 +17,13 @@ main{
     
 }
 
+h2{
+    min-width: 14vw;
+    min-height: 4rem;
+    max-width: 35vw;
+    background: rgba(22, 21, 21, 0.842);
+}
+
 article{
     min-height: 20vh;
     min-width: 20vw;
@@ -58,16 +65,13 @@ section h2, section p, h2{
     min-height: 10vh;
     max-width: 50vw;
     max-height: 50vh;
+    gap: 2rem;
 }
 
 .skills{
+    margin: auto;
     font-size: 2rem;
 }
-
-.skills ul{
-    list-style-type: none;
-}
-
 
 .project-section{
     border: 1px solid white;
