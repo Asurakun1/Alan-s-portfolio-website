@@ -17,6 +17,16 @@ main{
     
 }
 
+article{
+    min-height: 20vh;
+    min-width: 20vw;
+    max-width: 80vw;
+    max-height: 80vh;
+    text-indent: 3rem;
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+}
+
 h1{
     text-align: center;
     font-size: 3rem;
@@ -25,8 +35,11 @@ h1{
 
 .aboutme{
     border: 1px solid white;
-    height: 40vh;
-    width: 30vw;
+    background: rgba(22, 21, 21, 0.842);
+    min-height: 200px;
+    min-width: 300px;
+    max-height: 40vh;
+    max-width: 25vw;
     font-size: 2.5rem;
 }
 
@@ -34,12 +47,33 @@ section h2, section p, h2{
     text-align: center;
 }
 
+.skills-section{
+    background: rgba(22, 21, 21, 0.842);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid white;
+    flex-wrap: wrap;
+    min-width: 10vw;
+    min-height: 10vh;
+    max-width: 50vw;
+    max-height: 50vh;
+}
+
+.skills{
+    font-size: 2rem;
+}
+
+.skills ul{
+    list-style-type: none;
+}
+
 
 .project-section{
     border: 1px solid white;
     margin: 0;
     margin-left: 5vw;
-    width: 89vw;
+    max-width: 89vw;
     display: flex;
     flex-flow: wrap;
     justify-content: flex-start;
@@ -66,3 +100,4 @@ h2{
 img{
     width: 100%;
 }
+
