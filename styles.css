@@ -25,17 +25,24 @@ h2, .aboutme, .skills-section, .education-training{
 h2{
     min-width: 14vw;
     min-height: 4rem;
+    max-height: 100vh;
     max-width: 35vw;
 }
 
-article{
-    min-height: 20vh;
-    min-width: 33vh;
+article p{
+    min-height: 50vh;
+    min-width: 30vh;
     max-width: 80vw;
-    max-height: 882px;
+    max-height: 100vh;
     text-indent: 3rem;
     font-size: 1.7rem;
     line-height: 2.5rem;
+}
+
+@media only screen and (max-height: 800px) and (max-width: 413px){
+    article p{
+        min-height: 65rem;
+    }
 }
 
 h1{
@@ -49,8 +56,8 @@ h1{
     flex-direction: column;
     border: 1px solid white;
     min-height: 200px;
-    min-width: 300px;
-    max-height: 40vh;
+    min-width: 240px;
+    max-height: 100vh;
     max-width: 25vw;
     font-size: 2.5rem;
 }
@@ -60,7 +67,6 @@ section h2, section p, h2{
 }
 
 .skills-section{
-    margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -82,9 +88,9 @@ section h2, section p, h2{
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
-    min-width: 400px;
-    max-width: 50vw;
+    min-width: 10vw;
     min-height: 10vh;
+    max-width: 50vw;
     max-height: 100vh;
     font-size: 2rem;
 }
