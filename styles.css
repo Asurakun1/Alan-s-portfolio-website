@@ -17,22 +17,28 @@ main{
     
 }
 
+ul{
+    list-style-type: none;
+}
 
-h2, .aboutme, .skills-section, .education-training{
-    background: rgba(22, 21, 21, 0.842);
+
+h2, .aboutme, .skills-section, .education-training, .project-section{
+    background: rgba(22, 21, 21, 0.671);
+    border-radius: 5%;
 }
 
 h2{
+    font-size: 3rem;
     min-width: 14vw;
     min-height: 4rem;
+    max-height: 100vh;
     max-width: 35vw;
 }
 
-article{
-    min-height: 20vh;
-    min-width: 33vh;
-    max-width: 80vw;
-    max-height: 882px;
+article p{
+    min-height: 25vh;
+    min-width: 20vh;
+    max-width: 65vw;
     text-indent: 3rem;
     font-size: 1.7rem;
     line-height: 2.5rem;
@@ -46,13 +52,18 @@ h1{
 
 .aboutme{
     display: flex;
+    justify-content: center;
     flex-direction: column;
+    margin: 0 auto;
     border: 1px solid white;
-    min-height: 200px;
-    min-width: 300px;
-    max-height: 40vh;
-    max-width: 25vw;
+    min-height: 30vh;
+    min-width: 10vw;
+    max-width: 35rem;
     font-size: 2.5rem;
+}
+
+.aboutme h2, .aboutme p{
+    min-width: 100%;
 }
 
 section h2, section p, h2{
@@ -60,15 +71,19 @@ section h2, section p, h2{
 }
 
 .skills-section{
-    margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     min-width: 10vw;
-    min-height: 10vh;
+    min-height: 20vh;
     max-width: 50vw;
-    max-height: 50vh;
-    gap: 2rem;
+    gap: 5rem;
+}
+
+.skills-section section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .skills{
@@ -82,42 +97,77 @@ section h2, section p, h2{
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
-    min-width: 400px;
-    max-width: 50vw;
+    min-width: 10vw;
     min-height: 10vh;
-    max-height: 100vh;
+    max-width: 50vw;
     font-size: 2rem;
 }
 
 .project-section{
-    border: 1px solid white;
-    margin: 0;
-    margin-left: 5vw;
-    max-width: 89vw;
     display: flex;
-    flex-flow: wrap;
-    justify-content: flex-start;
-    gap: 2vw;
+    max-width: 60vw;
 }
 
-h2{
-    font-size: 3rem;
+.project-section ul{
+    margin: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    font-size: 1.8rem;
+    gap: 1.5rem;
 }
 
-.project-section .box{
-    border: 1px solid white;
+a{
+    color: whitesmoke;
+    text-decoration: none;
 }
 
-.box{
-    display: block;
-    width: 15vw;
+a:hover{
+    background: white;
+    color: black;
 }
 
-.box h3{
-    text-align: center;
+.contact-section{
+    display: flex;
+    flex-direction: column;
+    background: rgb(22, 21, 21);
+    width: 100vw;
+    min-width: 325px;
 }
 
-img{
-    width: 100%;
+.contact-section h2{
+    font-size: 2rem;
 }
 
+.contact-section section{
+    margin-left: 5vw;
+}
+
+.contact-section section ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+
+@media only screen and (max-width: 413px){
+
+    h1, h2, p{
+        font-size: 2rem;
+    }
+    article p{
+        min-height: 65rem;
+    }
+
+    .project-section, .aboutme{
+        flex-direction: column;
+    }
+
+    .contact-section h2{
+        min-width: 100%;
+    }
+    .contact-section section ul{
+        font-size: 1.2rem;
+    }
+}
