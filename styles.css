@@ -117,15 +117,39 @@ section h2, section p, h2{
     gap: 1.5rem;
 }
 
-.project-section ul li a{
+a{
     color: whitesmoke;
     text-decoration: none;
 }
 
-.project-section ul li a:hover{
+a:hover{
     background: white;
     color: black;
 }
+
+.contact-section{
+    display: flex;
+    flex-direction: column;
+    background: rgb(22, 21, 21);
+    width: 100vw;
+    min-width: 325px;
+}
+
+.contact-section h2{
+    font-size: 2rem;
+}
+
+.contact-section section{
+    margin-left: 5vw;
+}
+
+.contact-section section ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
 
 @media only screen and (max-width: 413px){
 
@@ -138,5 +162,12 @@ section h2, section p, h2{
 
     .project-section, .aboutme{
         flex-direction: column;
+    }
+
+    .contact-section h2{
+        min-width: 100%;
+    }
+    .contact-section section ul{
+        font-size: 1.2rem;
     }
 }
