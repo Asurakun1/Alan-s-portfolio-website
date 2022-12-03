@@ -22,8 +22,9 @@ ul{
 }
 
 
-h2, .aboutme, .skills-section, .education-training{
-    background: rgba(22, 21, 21, 0.842);
+h2, .aboutme, .skills-section, .education-training, .project-section{
+    background: rgba(22, 21, 21, 0.671);
+    border-radius: 5%;
 }
 
 h2{
@@ -71,7 +72,7 @@ section h2, section p, h2{
 
 .skills-section{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     min-width: 10vw;
     min-height: 20vh;
@@ -104,20 +105,27 @@ section h2, section p, h2{
 
 .project-section{
     display: flex;
-    justify-content: space-evenly;
-    border: 1px solid white;
     max-width: 60vw;
-    gap: 4rem;
 }
 
 .project-section ul{
+    margin: 2rem;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction:column;
     font-size: 1.8rem;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
+.project-section ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.project-section ul li a:hover{
+    background: white;
+    color: black;
+}
 
 @media only screen and (max-width: 413px){
 
@@ -129,6 +137,6 @@ section h2, section p, h2{
     }
 
     .project-section, .aboutme{
-        display: block;
+        flex-direction: column;
     }
 }
